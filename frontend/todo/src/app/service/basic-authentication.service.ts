@@ -32,27 +32,27 @@ export class BasicAuthenticationService {
   }
 
 
-  executeAuthenticationService(username, password) {
+  // executeAuthenticationService(username, password) {
     
-    let basicAuthHeaderString = 'Basic ' + window.btoa(username + ':' + password);
+  //   let basicAuthHeaderString = 'Basic ' + window.btoa(username + ':' + password);
 
-    let headers = new HttpHeaders({
-        Authorization: basicAuthHeaderString
-      })
+  //   let headers = new HttpHeaders({
+  //       Authorization: basicAuthHeaderString
+  //     })
 
-    return this.http.get<AuthenticationBean>(
-      `${API_URL}/basicauth`,
-      {headers}).pipe(
-        map(
-          data => {
-            sessionStorage.setItem(AUTHENTICATED_USER, username);
-            sessionStorage.setItem(TOKEN, basicAuthHeaderString);
-            return data;
-          }
-        )
-      );
-    //console.log("Execute Hello World Bean Service")
-  }
+  //   return this.http.get<AuthenticationBean>(
+  //     `${API_URL}/basicauth`,
+  //     {headers}).pipe(
+  //       map(
+  //         data => {
+  //           sessionStorage.setItem(AUTHENTICATED_USER, username);
+  //           sessionStorage.setItem(TOKEN, basicAuthHeaderString);
+  //           return data;
+  //         }
+  //       )
+  //     );
+  //   //console.log("Execute Hello World Bean Service")
+  // }
 
   getAuthenticatedUser() {
     return sessionStorage.getItem(AUTHENTICATED_USER)
