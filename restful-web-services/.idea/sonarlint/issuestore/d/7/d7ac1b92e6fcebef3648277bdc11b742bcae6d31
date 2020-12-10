@@ -1,0 +1,17 @@
+
+E
+java:S5411@"*Use the primitive boolean expression here.(ŠÑÏÀÿÿÿÿÿ
+º
+java:S1130-"£Remove the declaration of thrown exception 'com.in28minutes.rest.webservices.restfulwebservices.jwt.resource.AuthenticationException' which is a runtime exception.(ïÁ
+?
+java:S1481>")Remove this unused "user" local variable.(‹›™¨
+<
+java:S1452:"&Remove usage of generic wildcard type.(Ä©þò
+`
+java:S4488+"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(™þ»‘
+c
+java:S44889"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(É–Ñýÿÿÿÿ
+N
+java:S1854>"8Remove this useless assignment to local variable "user".(‹›™¨
+<
+java:S1452,"&Remove usage of generic wildcard type.(œ‘ÏŸ
